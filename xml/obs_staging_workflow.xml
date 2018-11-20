@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<chapter version="5.1" xml:id="cha.obs.stagingworkflow"
+ xmlns="http://docbook.org/ns/docbook"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xlink="http://www.w3.org/1999/xlink" >
+ <title>Staging Workflow</title>
+ <para/>
+ <remark>TBD</remark>
+<!--
+ <sect1>
+  <title>Handling Dependencies</title>
+  <para/>
+  <remark>TBD</remark>
+ </sect1>
+-->
+ <sect1 xml:id="sec.obs.staging.workflow.usage">
+  <title>Usage</title>
+  <para>Using the API we can assign and remove request to a StagingProject.</para>
+  <sect2 xml:id="sec.obs.staging.workflow.staging.request">
+    <title>List requests of a Staging Project</title>
+    <para>We can check all the requests assigned to a staging project </para>
+    <screen>
+      <command>osc</command> api '/staging_project/staging_project_name/staged_requests'
+    </screen>
+  </sect2>
+
+  <sect2 xml:id="sec.obs.staging.workflow.assign.request">
+    <title>Assing requests into Staging Project</title>
+    <para>W </para>
+    <screen>
+      <command>osc</command> api -X POST '/staging_project/staging_project_name/staged_requests' -d
+    </screen>
+  </sect2>
+
+  <sect2 xml:id="sec.obs.staging.workflow.remove.request">
+    <title>Remove requests into Staging Project</title>
+    <para>W </para>
+    <screen>
+      <command>osc</command> api -X DELETE '/staging_project/staging_project_name/staged_requests' -d
+    </screen>
+  </sect2>
+ </sect1>
+
+</chapter>
